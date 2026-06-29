@@ -1,0 +1,24 @@
+{
+  "name": "mini-site-test-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lilian16G/mini-site-test-cms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lilian16G/mini-site-test-cms/issues"
+  },
+  "homepage": "https://github.com/Lilian16G/mini-site-test-cms#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
