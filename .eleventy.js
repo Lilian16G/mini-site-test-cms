@@ -1,8 +1,10 @@
-// Fichier de configuration principal d'Eleventy
-
 module.exports = function (eleventyConfig) {
-  // Copie le dossier images tel quel dans _site
   eleventyConfig.addPassthroughCopy("images");
+
+  // Regroupe tous les fichiers du dossier "services" dans une collection
+  eleventyConfig.addCollection("services", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("services/*.md");
+  });
 
   return {
     dir: {
