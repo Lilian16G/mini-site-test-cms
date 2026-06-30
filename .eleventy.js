@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("admin"); // copie admin/config.yml tel quel
 
-  // Regroupe tous les fichiers du dossier "services" dans une collection
   eleventyConfig.addCollection("services", function (collectionApi) {
     return collectionApi.getFilteredByGlob("services/*.md");
   });
