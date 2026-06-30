@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: Mon Entreprise Test - Accueil
+---
+<h1>Nos services</h1>
+
+<div class="liste-services">
+  {% for service in services %}
+    {% include "carte-service.njk" %}
+  {% endfor %}
+</div>

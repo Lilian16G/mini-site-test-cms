@@ -1,0 +1,13 @@
+<div class="carte-service">
+
+  {% if service.image %}
+    <img src="{{ service.image }}" alt="{{ service.titre }}">
+  {% else %}
+    <p>📷 Photo à venir</p>
+  {% endif %}
+
+  <h2>{{ service.titre }}</h2>
+  <p><strong>Catégorie :</strong> {{ service.categorie }}</p>
+  <p>{{ service.description }}</p>
+
+</div>
